@@ -6,6 +6,8 @@ function getAllPost() {
 }
 
 function addPost(post) {
+    // const { author, content } = post;
+    // const newPost = { author, content, id: currentId++ };
     const newPost = { ...post, id: currentId++ };
     posts.push(newPost);
     return newPost;

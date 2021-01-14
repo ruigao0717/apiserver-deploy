@@ -1,5 +1,5 @@
 const postModel = require('../models/post');
-module.exports = function (req, res, next) {
+module.exports = function (req, res, next, error) {
     let { id } = req.params;
     id = Number(id);
     if (!postModel.doesIdExist(id)) {
